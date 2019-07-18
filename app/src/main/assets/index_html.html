@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display an alert box.</p>
+<button onclick="myFunction()">Try it</button>
+<script>
+window.testorigin = "*";
+var obj = {
+    message : "Test"
+};
+function myFunction(e) {
+	if(window.postMessage){
+    	  console.log("Hello! I am an alert box via ios post message! Sending a Hello message");
+        webkit.messageHandlers.myFunction.postMessage(window.obj);
+    } else {
+        console.log("No Post Message found");
+    }
+}
+</script>
+
+</body>
+</html>
