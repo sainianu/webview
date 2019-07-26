@@ -1,2 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mylibrary" />
+    package="com.example.mylibrary" >
+<uses-permission android:name="android.permission.INTERNET"/>
+
+<application
+android:allowBackup="false">
+<activity android:name=".LogOnLabsFragment">
+</activity>
+</application></manifest>
